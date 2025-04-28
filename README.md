@@ -4,7 +4,7 @@
 **Windows:**
 ```bash
 # Перейдите в директорию проекта
-cd C:\Users\vipya\.vscode\finance_bot
+cd C:\Users\"имя_пользователя"\.vscode\finance_bot
 
 # Создайте виртуальное окружение
 python -m venv venv
@@ -18,7 +18,6 @@ cd ~/project/finance_bot
 # Создайте виртуальное окружение
 python3 -m venv venv
 ```
-_Примечание: `venv` — имя папки окружения, можно выбрать другое (например, `.venv`) [[8]]_
 
 ---
 
@@ -39,7 +38,7 @@ source venv/bin/activate
 ### 3. Установка зависимостей
 После активации установите необходимые пакеты:
 ```bash
-pip install aiosqlite sqlalchemy[async] python-telegram-bot apscheduler requests bcrypt
+pip install -r requirements.txt
 ```
 
 ---
@@ -63,6 +62,10 @@ deactivate
 **Важные моменты:**
 1. Всегда активируйте окружение перед работой с проектом [[6]]
 2. Используйте `python` вместо `python3` в Windows, `python3` — в Linux/macOS [[9]]
+3. Запуск бота:
+```bash
+python main.py
+```
 
 **Список всех команд бота:**
 
